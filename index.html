@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <title>DTA</title>
 
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-    <nav>
-        <div class="header">
+        <nav class="header">
             <div class="logo">
-                <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="">
+                <img src="https://deepthought.education/assets/images/logo/logo.svg">
             </div>
             <div class="icon">
                 <i class="fa-solid fa-house"></i>
@@ -23,24 +22,156 @@
                 <i class="fa-solid fa-screwdriver-wrench"></i>
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </div>
-    </nav>
+        </nav>
     </header>
-<br>
-    <main>
+
+    <div class="notice-board">
+        Notice Board
+    </div>
+    <div class="side-bar" id="sideBar">
+        <div class="arrow" onclick="toggleBar()">
+            ➤</div>
+            <div class="step">
+                    1
+            </div>
+            <ul class="points">
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>4SA Method</li>
+            </ul>
+        </div>
         <section class="topic">
             <h1>Technical Project Management</h1>
-            <button>Sumbit Task</button>
-            
+            <button id="submitBtn">Submit Task</button>
         </section>
-        <br>
-        <div class="notice-board">
-                Notice Board
+        <section class="desc">
+            <h3>Explore the world of management</h3>
+            <p>
+            As a project manager, you play an important role in leading a project through
+            initiation, planning, execution, monitoring, controlling and completion.How? Do you
+            want to <br>manage each every step of your life?
+        </p>
+    </section>
+    <section class="grid">
+        <div class="card">
+            <div class="card-header">
+                <span>Technical Project Management</span>
+                <i class="fa-solid fa-circle-info"></i>
             </div>
-    </main>
+            <div class="card-body">
+                
+                <p class="description">
+                    <b>Description: </b>Story of Alignment Scope of Agility Specific Accountable Staggering Approach
+                </p>
+                <iframe src="https://www.youtube.com/embed/TiMRwri1xJ8"></iframe>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <span>Threadbuild</span>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="card-body">
+                <p class="description">
+                    <b>Description:</b> Watch the video and thread build, and jot out key threads while watching that video.
+                </p>
+                <h4 class="thread-title">Thread A</h4>
+                <div class="thread-row">
+                    <div>
+                        <label>Sub Thread 1</label>
+                        <textarea placeholder="Enter Text Here"></textarea>
+                    </div>
+                    <div>
+                        <label>Sub Interpretation 1</label>
+                        <textarea placeholder="Enter Text Here"></textarea>
+                    </div>
+                </div>
 
-    
+                <button class="sub-thread-btn">+ Sub thread</button>
 
-    <script src="script.js"></script>
+                <label>Summary for Thread A</label>
+                <textarea placeholder="Enter Text Here"></textarea>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span>Structure Your Pointers</span>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+            <div class="card-body">
+                <p class="description">
+                    <strong>Description:</strong> Write a 400–500 word article from your thread.
+                </p>
+
+                <label>Title</label>
+                <input type="text">
+
+                <label>Content</label>
+                <div class="editor-toolbar">
+                    <span>File</span><span>Edit</span><span>View</span>
+                    <span>Insert</span><span>Format</span>
+                    <span>Tools</span><span>Table</span><span>Help</span>
+                </div>
+                <textarea class="editor"></textarea>
+            </div>
+        </div>
+
+        
+                <div class="card">
+            <div class="card-header">
+                <span>4SA Method</span>
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+
+            <div class="card-body">
+                <p class="description"><strong>Description:</strong> To explore more read more</p>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Introduction</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="accordion-content show">
+                        <p>The 4SA Method, How to bring a idea into process?</p>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Thread A</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="accordion-content show">
+                        <p>
+                            How are you going to develop your strategy?
+                            Which method are you going to use to develop a strategy?
+                            What if the project is lengthy?
+                        </p>
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <span>Example 1</span>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="accordion-content show">
+                        <p>You have a concept; how will you put it into practice?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>
